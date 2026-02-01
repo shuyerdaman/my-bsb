@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color:darkcyan;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 38px;    
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+.kiyim p{
+    text-decoration: line-through 2px black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-top: 2px solid darkcyan;
+    width: 100%;
+}
+
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px darkcyan;
+}
+
+section h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+section p {
+    font-size: 16px;
+}
+
+button {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mahsulotlar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.mahsulot {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid aqua;
+}
+
+.mahsulot h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.mahsulot p {
+    color:brown;
+    font-weight: bold;
+    font-size: 1px;
+}
+
+.kiyim {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.kiyim h3 {
+    flex-basis: 100%;
+    margin: 0;
+}
+
+.kiyim p {
+    flex-basis: 100%;
+    margin: 0;
+}
+
+.kiyim img {
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+footer {
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+form{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table td {
+    padding: 12px 12px;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    font-size: 15px;
+}
+
+table tbody tr {
+    transition: all 0.3s ease;
+}
+
+table tbody tr:hover {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    cursor: pointer;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f8f9ff;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* === Aksiyalar (Chegirmalar) bo'limi uchun chiroyli uslublar === */
+#Aksiyalar h2 {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 999px;
+    color: #fff;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 10px 25px rgba(102,126,234,0.18);
+    margin-bottom: 18px;
+}
+
+#Aksiyalar .aksiyalar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    align-items: stretch;
+    margin-top: 12px;
+}
+
+.Aksiyalar .aksiya {
+    background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+    border-radius: 14px;
+    padding: 22px 18px;
+    box-shadow: 0 10px 30px rgba(16,24,40,0.06);
+    transition: transform 250ms ease, box-shadow 250ms ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.Aksiyalar .aksiya:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(16,24,40,0.12);
+}
+
+.Aksiyalar .aksiya h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+#Aksiyalar .discount-percent {
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    line-height: 76px;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    background: radial-gradient(circle at 30% 30%, #ff9a3c 0%, #ff5a5f 40%, #c6003f 100%);
+    box-shadow: 0 10px 28px rgba(198,0,63,0.18);
+    margin: 6px 0 12px 0;
+}
+
+#Aksiyalar .aksiya-sana {
+    display: block;
+    margin-top: 10px;
+    color: #64748b;
+    font-weight: 600;
+}
+
+#Aksiyalar .aksiya p {
+    color: #334155;
+    margin: 6px 0;
+}
+
+@media (max-width: 600px) {
+    .Aksiyalar .aksiyalar {
+        grid-template-columns: 1fr;
+    }
+    .Aksiyalar .discount-percent {
+        width: 64px;
+        height: 64px;
+        line-height: 64px;
+        font-size: 1.6rem;
+    }
+}
+
+form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 120px;
+    max-height: 400px;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #333;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    resize: vertical;
+    overflow: auto;
+    transition: border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+form textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102,126,234,0.24);
+    background: #f8f9ff;
+}
+
+form textarea::placeholder {
+    color: #9aa4b2;
+}
+
+form textarea:disabled {
+    background: #f3f4f6;
+    color: #9aa4b2;
+    cursor: not-allowed;
+}
